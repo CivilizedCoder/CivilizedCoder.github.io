@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+     <link rel="stylesheet" href="css/mainStyle.css">
+    <title>MyMovies</title>
+</head>
+<body>
+    <h1>MyMovies<hr/></h1>
+    <form action="connect.php" method="POST">
+        Please indicate your age for a more appropriate movie selection (optional):
+        <input type="number" id="age" name="age" max=“125" step="1">
+
+        Please indicate your favorite actor by last name(optional):
+        <input type="text" id="name" name="name" maxlength=“20">
+
+        Please indicate a category/genre:
+        <select id="genre" name="genre" required>
+            <option value="Action">Action</option>
+            <option value="Animation">Animation</option>
+            <option value="Classics">Classics</option>
+            <option value="Comedy">Documentary</option>
+            <option value="Documentary">Documentary</option>
+            <option value="Drama">Drama</option>
+            <option value="Family">Family</option>
+            <option value="Foreign">Foreign</option>
+            <option value="Games">Games</option>
+            <option value="Horror">Horror</option>
+            <option value="Music">Music</option>
+            <option value="New">New</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Sports">Sports</option>
+            <option value="Travel">Travel</option>
+            <option value="Any">Any</option>
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
